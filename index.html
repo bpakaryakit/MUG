@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false" ondragstart="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Masaüstü Uygulama Geliştirme</title>
+    <link rel="Shortcut Icon" href="https://bpakaryakit.github.io/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://bpakaryakit.github.io/css/style.css">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="BP Akaryakıt">
+  <meta property="og:image" content="https://bpakaryakit.github.io/images/icon.png">
+  <meta name="twitter:description" content="Bilecik Şeyh Edebali Bilgisayar Programcılığı Bölümü Ve Daha Fazlası...">
+</head>
+
+<body style="background-color: LightSkyBlue ;">
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i><img src="https://bpakaryakit.github.io/images/icon.png" height="50" width="50" alt=""></i>
+        <span class="logo_name">Bilgisayar Programcılığı</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+            <a href="https://bpakaryakit.github.io">
+                <i class="fa-brands fa-phoenix-framework"></i>
+                              <span class="link_name">Ana Sayfa</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://bpakaryakit.github.io">Ana Sayfa</a></li>
+            </ul>
+          </li>
+        <li>
+          <a href="https://bpakaryakit.github.io/pages/syllabus.html">
+            <i class="fa-regular fa-calendar-days"></i>
+            <span class="link_name">Ders Programı</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://bpakaryakit.github.io/pages/syllabus.html">Ders Programı</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span class="link_name">PDF'ler</span>
+            <i  id="ok" class="fa-solid fa-caret-down"></i>
+                  </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Pdfler</a></li>
+                        <li><a href="https://bpakaryakit.github.io/YDKVY/">Yazılım Donanım Kurulumu Ve Yönetimi</a></li>
+                        <li><a href="https://bpakaryakit.github.io/WTT/">Web Tasarımın Temelleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/TE/">Temel Elektronik</a></li>
+                        <li><a href="https://bpakaryakit.github.io/PT/">Programlamanın Temelleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/M/">Matematik 1</a></li>
+                        <li><a href="https://bpakaryakit.github.io/VTVYS/">Veri Tabanı Ve Yönetim Sistemleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/IY/">İlk Yardım</a></li>
+                        <li><a href="https://bpakaryakit.github.io/AT/">Ağ Teknolojileri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/PD/">Programlama Dilleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/M2/">Matematik 2</a></li>
+                        <li><a href="https://bpakaryakit.github.io/MOUG/">Mobil Uygulama Geliştirme</a></li>
+                        <li><a href="https://bpakaryakit.github.io/IWP/">İleri Web Programlama</a></li>
+                        <li><a href="#">Masaüstü Uygulama Geliştirme</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="iocn-link">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                        <span class="link_name">Sınavlar</span>
+                        <i id="ok" class="fa-solid fa-caret-down"></i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Sınavlar</a></li>
+                        <li><a href="https://bpakaryakit.github.io/WTT/exam.html">Web Tasarımın Temelleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/TE/exam.html">Temel Elektronik</a></li>
+                        <li><a href="https://bpakaryakit.github.io/PT/exam.html">Programlamanın Temelleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/M1/exam.html">Matematik 1</a></li>
+                        <li><a href="https://bpakaryakit.github.io/VTVYS/exam.html">Veri Tabanı Ve Yönetim Sistemleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/AT/exam.html">Ağ Teknolojileri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/PD/exam.html">Programlama Dilleri</a></li>
+                        <li><a href="https://bpakaryakit.github.io/IWP/exam.html">İleri Web Programlama</a></li>
+                        <li><a href="https://bpakaryakit.github.io/MUG/exam.html">Masaüstü Uygulama Geliştirme</a></li>
+                      </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span class="link_name">Öğretmenler</span>
+            <i  id="ok" class="fa-solid fa-caret-down"></i>
+                  </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Öğretmenler</a></li>
+                <li><a target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=1834E9056FC26C74">Serkan Sökmen</a></li>
+                <li><a target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">Uğur KAYİŞ</a></li>
+                <li><a target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=6542112720FC0548">Şamil Akçağıl</a></li>
+                <li><a target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=6EE2FFCB7FBDE474">Uğur Kayiş</a></li>
+                <li><a target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=604615E15117E198">Abdulmelik Derinkök</a></li>
+                <li><a target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=6293202C2BED384C">Yusuf Muştu</a></li>
+          </ul>
+        </li>
+        <li>
+          <a target="_blank" href="https://obs.bilecik.edu.tr/login.aspx?ReturnUrl=/default.aspx">
+            <i class='fa-solid fa-graduation-cap'></i>
+            <span class="link_name">ÖBS Giriş</span><i id="link" class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" target="_blank" href="https://obs.bilecik.edu.tr/login.aspx?ReturnUrl=/default.aspx">ÖBS Giriş</a></li>
+          </ul>
+        </li>
+        <li>
+          <a  target="_blank" href="https://bilecik.edu.tr/turkdiliedebiyati/Icerik/Yemek_Menusu">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <span class="link_name">Yemek Menüsü</span><i id="link" class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" target="_blank" href="https://bilecik.edu.tr/turkdiliedebiyati/Icerik/Yemek_Menusu">Yemek Menüsü</a></li>
+          </ul>
+        </li>
+        <li>
+          <a target="_blank" href="https://unka.bilecik.edu.tr:82/User/Login">
+            <i class="fa-solid fa-id-card"></i>
+            <span class="link_name">Unka Bilecik</span><i id="link" class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" target="_blank" href="https://unka.bilecik.edu.tr:82/User/Login">Unka Bilecik</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://bpakaryakit.github.io/pages/academiccalendar.html">
+            <i class='fa-solid fa-building-columns'></i>
+            <span class="link_name">Akademik Takvim</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://bpakaryakit.github.io/pages/academiccalendar.html">Akademik Takvim</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://bpakaryakit.github.io/pages/examdates.html">
+            <i class="fa-solid fa-pencil"></i>
+            <span class="link_name">Sınav Tarihleri</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://bpakaryakit.github.io/pages/examdates.html">Sınav Tarihleri</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://bpakaryakit.github.io/pages/activity.html">
+            <i class="fa-solid fa-volleyball"></i>
+            <span class="link_name">Etkinlikler</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="https://bpakaryakit.github.io/pages/activity.html">Etkinlikler</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="name-job">
+              <div class="profile_name">Murat Karman</div>
+              <div class="job">Bankacılık Ve Sigortacılık</div>
+            </div>
+            <a target="_blank" href="https://www.instagram.com/muratkarman14/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="fa-solid fa-bars"></i>
+        <span class="text">Masaüstü Uygulama Geliştirme</span>
+      </div>
+    </section>
+    <script>
+    let arrow = document.querySelectorAll(".iocn-link");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement;
+        let arrow = e.target.parentElement;
+        arrowParent.classList.toggle("showMenu");
+        arrow.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".fa-bars");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+  
+    <div class="projects-section">
+      <div class="projects-section-header">
+        <p>Bilgisayar Programcılığı</p>
+        <p class="time">
+          <script language="JavaScript">
+            var now = new Date(); var yr = now.getYear(); var mName = now.getMonth() + 1; var dName = now.getDay() + 1;
+            var yr_str = " 19"; 
+            var dayNr = ((now.getDate() < 10) ? "" : "") + now.getDate(); 
+            if (dName == 1) Day = "Pazar"; 
+            if (dName == 2) Day = "Pazartesi"; 
+            if (dName == 3) Day = "Salı"; 
+            if (dName == 4) Day = "Çarşamba"; 
+            if (dName == 5) Day = "Perşembe"; 
+            if (dName == 6) Day = "Cuma"; 
+            if (dName == 7) Day = "Cumartesi"; 
+            if (mName == 1) Month = "Ocak"; 
+            if (mName == 2) Month = "Şubat"; 
+            if (mName == 3) Month = "Mart";
+            if (mName == 4) Month = "Nisan"; 
+            if (mName == 5) Month = "Mayıs"; 
+            if (mName == 6) Month = "Haziran"; 
+            if (mName == 7) Month = "Temmuz"; 
+            if (mName == 8) Month = "Ağustos"; 
+            if (mName == 9) Month = "Eylül";
+            if (mName == 10) Month = "Ekim"; 
+            if (mName == 11) Month = "Kasım"; 
+            if (mName == 12) Month = "Aralık";
+            if (yr > 99) {
+              yr_str = " ";
+              if (yr < 2000) yr += 1900;
+            } var todaysDate = (" " + dayNr + " " + Month + yr_str + yr + "" + ", " + Day + ""); document.open(); document.write(todaysDate);// -->
+          </script>
+        </p>
+      </div>
+      <div class="projects-section-line">
+        <div class="projects-status">
+          <div class="item-status">
+            <span class="status-number">54</span>
+            <span class="status-type">Öğrenci</span>
+          </div>
+          <div class="item-status">
+            <span class="status-number">36</span>
+            <span class="status-type">Erkek</span>
+          </div>
+          <div class="item-status">
+            <span class="status-number">18</span>
+            <span class="status-type">Kız</span>
+          </div>
+        </div>
+  
+      </div>
+      <div class="project-boxes jsGridView">
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #fee4cb;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">1. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">C# Giriş</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 44%; background-color: #ff942e"></span>
+              </div>
+              <p class="box-progress-percentage">44%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #ff942e;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_1 C# GİRİŞ.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #ff942e;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_1 C# GİRİŞ.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #ff942e;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #dbf6fd;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">2. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Değişkenler</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 22%; background-color: #096c86"></span>
+              </div>
+              <p class="box-progress-percentage">22%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #096c86;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_2 Değişkenler.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #096c86;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_2 Değişkenler.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #096c86;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box"  style="background-color: #c8f7dc;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">3. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Veri Türleri</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 56%; background-color: #34c471"></span>
+              </div>
+              <p class="box-progress-percentage">56%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #34c471;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_3 Veri Türleri.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #34c471;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_3 Veri Türleri.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #34c471;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #ffd3e2;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">4. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Tür Dönüşümleri</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 22%; background-color: #df3670"></span>
+              </div>
+              <p class="box-progress-percentage">22%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #df3670;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_4 Tür Dönüşümleri.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #df3670;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_4 Tür Dönüşümleri.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #df3670;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #e9e7fd;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">5. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Operatörler</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 14%; background-color: #4f3ff0"></span>
+              </div>
+              <p class="box-progress-percentage">14%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #4f3ff0;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_5 Operatörler.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #4f3ff0;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_5 Operatörler.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #4f3ff0;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #e3f8c6;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">6. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Akış Kontrol Mekanizmaları İf Else</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 37%; background-color: #84d317"></span>
+              </div>
+              <p class="box-progress-percentage">37%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #84d317;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_6 Akış Kontrol Mekanizmaları if else.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #84d317;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_6 Akış Kontrol Mekanizmaları if else.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #84d317;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #ffd5fc;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">7. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Akış Kontrol Mekanizmaları Switch Case</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>  
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 24%; background-color: #e340f9"></span>
+              </div>
+              <p class="box-progress-percentage">24%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #e340f9;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_7 Akış Kontrol Mekanizmaları switchCase.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #e340f9;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_7 Akış Kontrol Mekanizmaları switchCase.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #e340f9;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #debcff;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">8. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Döngü For Foreach</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 50%; background-color: #663399"></span>
+              </div>
+              <p class="box-progress-percentage">50%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #663399;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_8 Döngü for foreach.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #663399;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_8 Döngü for foreach.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #663399;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #94eebb;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">9. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Döngü While</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 29%; background-color: #2E8B57"></span>
+              </div>
+              <p class="box-progress-percentage">29%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #2E8B57;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_9 Döngü_while_dowhile.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #2E8B57;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_9 Döngü_while_dowhile.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #2E8B57;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #f296d0;">
+            <div class="project-box-header">
+              <span>04.05.2023</span>
+              <div class="days-left">10. PDF - VİZE</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Diziler Array</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 27%; background-color: #C71585"></span>
+              </div>
+              <p class="box-progress-percentage">27%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #C71585;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_10 Diziler Array.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #C71585;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_10 Diziler Array.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #C71585;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #b0a4f9;">
+            <div class="project-box-header">
+              <span>16.06.2023</span>
+              <div class="days-left">11. PDF - FİNAL</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Çok Boyutlu Diziler</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 25%; background-color: #483D8B"></span>
+              </div>
+              <p class="box-progress-percentage">25%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #483D8B;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_11 Çok Boyutlu Diziler.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #483D8B;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_11 Çok Boyutlu Diziler.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #483D8B;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #d8d874;">
+            <div class="project-box-header">
+              <span>16.06.2023</span>
+              <div class="days-left">12. PDF - FİNAL</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Metotlar (Fonksiyonlar)</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 25%; background-color: #808000"></span>
+              </div>
+              <p class="box-progress-percentage">25%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #808000;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_12 Metotlar (Fonksiyonlar).pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #808000;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_12 Metotlar (Fonksiyonlar).pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #808000;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #ff879f;">
+            <div class="project-box-header">
+              <span>16.06.2023</span>
+              <div class="days-left">13. PDF - FİNAL</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Sınıflar</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 41%; background-color: #DC143C"></span>
+              </div>
+              <p class="box-progress-percentage">41%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #DC143C;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_13 Sınıflar.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #DC143C;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_13 Sınıflar.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #DC143C;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #8080f5;">
+            <div class="project-box-header">
+              <span>16.06.2023</span>
+              <div class="days-left">14. PDF - FİNAL</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Form Tasarımı</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 13%; background-color: #191970"></span>
+              </div>
+              <p class="box-progress-percentage">13%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #191970;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_14 Form Tasarımı Giriş.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #191970;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_14 Form Tasarımı Giriş.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #191970;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #ffe28c;">
+            <div class="project-box-header">
+              <span>16.06.2023</span>
+              <div class="days-left">15. PDF - FİNAL</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Kontrol Ekleme ve Özellikleri</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 26%; background-color: #FFBF00"></span>
+              </div>
+              <p class="box-progress-percentage">26%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #FFBF00;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_15 Kontrol Ekleme Ve Özellikleri.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #FFBF00;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_15 Kontrol Ekleme Ve Özellikleri.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #FFBF00;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #ff7c67;">
+            <div class="project-box-header">
+              <span>16.06.2023</span>
+              <div class="days-left">16. PDF - FİNAL</div>
+            </div>
+            <div class="project-box-content-header">
+              <p class="box-content-header">Kontrol Ekleme ve Özellikler 2</p>
+              <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+            </div>
+            <div class="box-progress-wrapper">
+              <p class="box-progress-header">Dosyanın İçeriği</p>
+              <div class="box-progress-bar">
+                <span class="box-progress" style="width: 18%; background-color: #FF2400"></span>
+              </div>
+              <p class="box-progress-percentage">18%</p>
+            </div>
+            <div class="project-box-footer">
+              <div class="participants">
+                <a class="add-participant" style="color: #FF2400;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_16 Kontrol Ekleme Ve Özellikleri 2.pdf"><i class="fa-solid fa-download"></i></a>
+                <a class="add-participant2" style="color: #FF2400;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_16 Kontrol Ekleme Ve Özellikleri 2.pdf"><i class="fa-solid fa-eye"></i></a>
+              </div>
+              <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+              <div class="days-left" style="color: #FF2400;">
+                Öğr. Gör. Arif GÜNEL
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-box-wrapper">
+            <div class="project-box" style="background-color: #7399ff;">
+              <div class="project-box-header">
+                <span>16.06.2023</span>
+                <div class="days-left">17. PDF - FİNAL</div>
+              </div>
+              <div class="project-box-content-header">
+                <p class="box-content-header">Entitu Framework</p>
+                <p class="box-content-subheader">Masaüstü Uygulama Geliştirme</p>
+              </div>
+              <div class="box-progress-wrapper">
+                <p class="box-progress-header">Dosyanın İçeriği</p>
+                <div class="box-progress-bar">
+                  <span class="box-progress" style="width: 60%; background-color: #1452ff"></span>
+                </div>
+                <p class="box-progress-percentage">60%</p>
+              </div>
+              <div class="project-box-footer">
+                <div class="participants">
+                  <a class="add-participant" style="color: #1452ff;" download href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_17 Entity Framework.pdf"><i class="fa-solid fa-download"></i></a>
+                  <a class="add-participant2" style="color: #1452ff;" target="_blank" href="Masaüstü Uygulama Geliştirme PDFS/Ma_U_G 1_17 Entity Framework.pdf"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <a class="teacher" target="_blank" href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=109A83AD17C2A6CE">
+                <div class="days-left" style="color: #1452ff;">
+                  Öğr. Gör. Arif GÜNEL
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+  </body>
+
+</html>
